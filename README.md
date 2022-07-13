@@ -29,7 +29,7 @@ To use the Point class import it in the required file. Then make the object like
 `<variable_name> = Geometry::Point.new(<value of x coordinate>, <value of y coordinate>)`
 
 Line Entity: To use the line entity import it in the required file. Then make the object like:<br>
-`<variable_name> = Line(point_one, point_two)`
+`<variable_name> = Geometry::Line(point_one, point_two)`
 
 NOTE: point_one, point_two are objects of point class.
 
