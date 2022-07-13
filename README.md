@@ -18,17 +18,26 @@ Or install it yourself as:
 
     $ gem install geometry
 
-## Build Instructions
-
-TODO: Write build instructions here
-
 ## Test Instructions
 
 Execute the command `bundle exec rspec` to test the gem.
 
 ## Usage
 
-TODO: Write usage instructions here
+Point Entity:
+To use the Point class import it in the required file. Then make the object like:<br>
+`<variable_name> = Geometry::Point.new(<value of x coordinate>, <value of y coordinate>)`
+
+Line Entity: To use the line entity import it in the required file. Then make the object like:<br>
+`<variable_name> = Line(point_one, point_two)`
+
+NOTE: point_one, point_two are objects of point class.
+
+To calculate the length of a line call length property on the object like:<br>
+`<line_object>.get_length`
+
+To calculate distance between two points using compute function:<br>
+`<point_object_one>.compute(<point_object_two>)`
 
 ## Development
 
@@ -38,4 +47,4 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/geometry.
+Bug reports and pull requests are welcome on GitHub at https://github.com/subash2121/geometry.

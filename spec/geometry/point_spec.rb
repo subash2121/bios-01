@@ -3,6 +3,12 @@ RSpec.describe Geometry::Point do
     it "should be initialised with two coordinates x,y" do
       expect { Geometry::Point.new(1, 2) }.not_to raise_error
     end
+
+    it "should raise exception if wrong input is given instead of point" do
+      point_one = Geometry::Point.new(1, 2)
+
+      expect { point_one.distance_from('2') }.to raise_exception
+    end
   end
 
   context "length for horizontal lines" do
@@ -50,7 +56,7 @@ RSpec.describe Geometry::Point do
     it "should return 5 for 0,1 and 3,5" do
       point_one = Geometry::Point.new(0, 1)
       point_two = Geometry::Point.new(3, 5)
-      
+
       expect(point_one.distance_from(point_two)).to be 5.0
     end
   end

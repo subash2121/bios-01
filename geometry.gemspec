@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Subash A"]
   spec.email         = ["subash.annadurai@shopup.org"]
 
-  spec.summary       = " Write a short summary, because RubyGems requires one."
-  spec.description   = " Write a longer description or delete this line."
+  spec.summary       = "This gem computes the distance between 2 coordinate points"
+  spec.description   = "This gem returns a float distance between 2 points"
   spec.homepage      = "https://www.google.com"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
